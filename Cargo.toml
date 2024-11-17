@@ -3,3 +3,6 @@ members = [ "async-openai", "examples/*" ]
 # Only check / build main crates by default (check all with `--workspace`)
 default-members = ["async-openai"]
 resolver = "2"
+
+[patch.crates-io]
+backoff = { git = "https://github.com/CycleFive/backoff", branch = "v0.4.1-alpha.1" }
